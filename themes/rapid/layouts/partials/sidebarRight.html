@@ -1,4 +1,62 @@
 <div class="sidebar s2">
+
+  <a class="sidebar-toggle" title="Expand Sidebar"><i class="fa icon-sidebar-toggle"></i></a>
+
+  <div class="sidebar-content">
+
+    <div class="sidebar-top group">
+      <p>More</p>
+    </div>
+
+
+    <div id="categories-2" class="widget widget_categories"><h3>Categories</h3>
+      <ul>
+        {{ range .Site.Params.Categories }}
+          <li class="cat-item cat-item-1">
+            <a href="categories/{{ . | urlize | lower }}/">{{ . }}</a>
+          </li>
+        {{ end }}
+      </ul>
+    </div>
+
+    <div id="tag_cloud-2" class="widget widget_tag_cloud"><h3>Tags</h3>
+
+      <div class="tagcloud">
+        <p class="post-tags">
+          {{if isset .Params "tags" }}
+              {{ range .Params.tags }}
+                <a rel="tag" href="tags/{{ . | urlize | lower }}/">{{ . }}</a>
+              {{ end }}
+            {{else}}
+              {{ range $k,$v:= .Site.Taxonomies.tags }}
+              <a rel="tag" href="tags/{{ $k | urlize | lower }}/"
+                 class="tag-link-{{ $v.Count }}"
+                 title="{{ $v.Count }} Posts">{{ $k }}</a>
+              {{ end}}
+          {{ end }}
+        </p>
+      </div>
+    </div>
+
+    <div class="widget widget_recent_entries sidebarLeftCategories"><h3>Last 5 GitHub Commits for this blog</h3>
+      <ul>
+        {{ $gcJ := getJSON "https://api.github.com/repos/wenyiweb/kevin-hugo-blog/commits" }}
+        {{range first 5 $gcJ }}
+            <li>
+              <a href="{{ .html_url}}" target="_blank">
+                  {{.commit.author.date}}<br>
+                  {{.commit.message}}
+              </a>
+            </li>
+        {{end}}
+      </ul>
+    </div>
+
+
+  </div>
+  <!--/.sidebar-content-->
+</div>
+<!-- <div class="sidebar s2">
   <a class="sidebar-toggle" title="Expand Sidebar"><i class="fa icon-sidebar-toggle"></i></a>
   <div class="sidebar-content">
     <div class="sidebar-top group">
@@ -14,4 +72,4 @@
       </ul>
     </div>
   </div>
-</div>
+</div> -->

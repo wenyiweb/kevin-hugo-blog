@@ -11,6 +11,10 @@ keywords:
 - 多说
 - GA
 - 教程
+Tags:
+- hugo
+- blog
+- 教程
 title: "Hugo+Github搭建个人博客图文教程"
 url: "2015/11/10/hugoblog"
 ---
@@ -165,3 +169,5 @@ $ git push -u origin master
 
 参考文章：
   [HugoQuickstart Guide](https://gohugo.io/overview/quickstart/)
+
+##### *The best preparation for tomorrow is doing your best today.*

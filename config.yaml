@@ -20,11 +20,11 @@ params:
   GitHubUser: "wenyiweb"
   SidebarRecentLimit: 5
   DateForm: "2006年01月02日"
-  Tagline: "一个程序员的思考与总结"
-  Description: "如果你没有感觉到时间不够用时，你多半正在虚度光阴。"
-  Keywords: "HTML5,程序员"
+  Tagline: ""
+  Description: "The best preparation for tomorrow is doing your best today."
+  Keywords: "HTML5,程序员,前端工程师"
   Categories:
-    - "读书笔记"
+    - "生活琐碎"
     - "技术文章"
 menu:
   main:
