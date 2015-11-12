@@ -13,7 +13,7 @@ keywords:
 tags:
 - gitcafe
 title: "Hugo搭建个人博客部署Github和gitcafe教程"
-url: "2015/11/12/Hugo搭建个人博客部署Github和gitcafe教程"
+url: "2015/11/12/hugopublish"
 ---
 
 由于github拒绝Baiduspider，所以你的博客只能通过google搜索到，但是为了让不能使用google的但是又渴望学习的同学们也能看到你的博客，所以介绍一下gitcafe的部署，官方的文档写的很清楚[[官方文档]](https://help.gitcafe.com/manuals/help/)。
