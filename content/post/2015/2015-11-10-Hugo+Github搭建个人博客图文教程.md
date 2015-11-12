@@ -170,4 +170,3 @@ $ git push -u origin master
 参考文章：
   [HugoQuickstart Guide](https://gohugo.io/overview/quickstart/)
 
-##### *The best preparation for tomorrow is doing your best today.*
