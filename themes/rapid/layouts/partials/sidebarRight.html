@@ -38,19 +38,19 @@
       </div>
     </div>
 
-    <div class="widget widget_recent_entries sidebarLeftCategories"><h3>Last 5 GitHub Commits for this blog</h3>
-      <ul>
-        {{ $gcJ := getJSON "https://api.github.com/repos/wenyiweb/kevin-hugo-blog/commits" }}
-        {{range first 5 $gcJ }}
-            <li>
-              <a href="{{ .html_url}}" target="_blank">
-                  {{.commit.author.date}}<br>
-                  {{.commit.message}}
-              </a>
-            </li>
-        {{end}}
-      </ul>
-    </div>
+   <!--  <div class="widget widget_recent_entries sidebarLeftCategories"><h3>Last 5 GitHub Commits for this blog</h3>
+     <ul>
+       {{ $gcJ := getJSON "https://api.github.com/repos/wenyiweb/kevin-hugo-blog/commits" }}
+       {{range first 5 $gcJ }}
+           <li>
+             <a href="{{ .html_url}}" target="_blank">
+                 {{.commit.author.date}}<br>
+                 {{.commit.message}}
+             </a>
+           </li>
+       {{end}}
+     </ul>
+   </div> -->
 
 
   </div>
